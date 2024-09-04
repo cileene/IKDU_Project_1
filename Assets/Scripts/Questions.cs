@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [System.Serializable]
 public class Question
 {
@@ -9,6 +10,7 @@ public class Question
     public string[] answers;
     public int correctAnswer;
     public Sprite questionImage;
+
 }
 
 [CreateAssetMenu(fileName = "New Question Category", menuName = "Quiz/Questions")]
