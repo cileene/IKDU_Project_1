@@ -5,22 +5,27 @@ using UnityEngine;
 public class NixWeight : MonoBehaviour
 {
 
-    private int nickAge;
-    private float nickWeight;
-    private string nickName;
+    public int playerAge = 33;
+    public float playerWeight = 68.0f;
+    public string playerName = "Nick Lee Jerlung";
     // Start is called before the first frame update
     void Start()
     {
-        nickWeight = 67.0f;
-        nickAge = 33;
-        nickName = "Nick Lee Jerlung";
-        Debug.Log($"Her er {nickName} og han er {nickAge} år gammel og vejer {nickWeight} kg");
-        
+        Debug.Log($"Her er {playerName} og han er {playerAge} år gammel og vejer {playerWeight} kg");
+        LooseWeight(3.0f);
+        Debug.Log($" {playerName} har tabt sig og vejer nu {playerWeight} kg");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    public void LooseWeight(float weightToLoose)
+    {
+        playerWeight -= weightToLoose;
+
     }
 }
