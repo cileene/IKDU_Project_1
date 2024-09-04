@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Questions : MonoBehaviour
+[System.Serializable]
+public class Question
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string questionFormulation;
+    public string[] answers;
+    public int correctAnswer;
+    public Sprite questionImage;
+}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+[CreateAssetMenu(fileName = "New Question Category", menuName = "Quiz/Questions")]
+public class Questions : ScriptableObject
+{
+    public string category;
+    public Question[] questionsList;
 }
