@@ -6,10 +6,10 @@ using UnityEngine;
 
 public class Question
 {
-   public string questionFormulation;
-   public string[] answers;
-   public int correctAnswer;
-   public Sprite questionImage;
+    public string questionFormulation;
+    public string[] answers;
+    public int correctAnswer;
+    public Sprite questionImage;
 }
 
 [CreateAssetMenu(fileName = "New Question Category", menuName = "Quiz/Questions")]

@@ -21,7 +21,7 @@ public class QuizManager : MonoBehaviour
     public int correctScore = 2;
     public int wrongScore = 1;
 
-    public 
+    public
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +31,7 @@ public class QuizManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void categorySelect(int categoryIndex)
@@ -59,16 +59,16 @@ public class QuizManager : MonoBehaviour
 
     public void OnReplySelect(int replyIndex)
     {
-       if (replyIndex == selectedCategory.questionsList[currentQuestionIndex].correctAnswer)
-       {
+        if (replyIndex == selectedCategory.questionsList[currentQuestionIndex].correctAnswer)
+        {
             Debug.Log("Du har svaret rigtigt!");
             scoreController.AddScore(correctScore);
-       }
-       else
-       {
+        }
+        else
+        {
             Debug.Log("Du har svaret forkert!");
             scoreController.RemoveScore(wrongScore);
-       }
+        }
         currentQuestionIndex++;
 
         if (currentQuestionIndex < selectedCategory.questionsList.Length)
@@ -80,5 +80,5 @@ public class QuizManager : MonoBehaviour
             Debug.Log("Du har svaret på alle spørgsmål!");
         }
     }
-    
+
 }

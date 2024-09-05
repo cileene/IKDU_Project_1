@@ -17,7 +17,7 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void AddScore(int scoreToAdd)
@@ -36,5 +36,5 @@ public class ScoreManager : MonoBehaviour
     {
         scoreText.text = "Score: " + score.ToString();
     }
-        
+
 }
