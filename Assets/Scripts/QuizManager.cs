@@ -51,4 +51,27 @@ public class QuizManager : MonoBehaviour
             buttonTexten.text = question.answers[i];
         }
     }
+
+    public void OnReplySelect(int replyIndex)
+    {
+       if (replyIndex == selectedCategory.questionsList[currentQuestionIndex].correctAnswer)
+       {
+            Debug.Log("Du har svaret rigtigt!");
+       }
+       else
+       {
+            Debug.Log("Du har svaret forkert!");
+       }
+        currentQuestionIndex++;
+        
+        if (currentQuestionIndex < selectedCategory.questionsList.Length)
+        {
+            DisplayQuestion();
+        }
+        else
+        {
+            Debug.Log("Du har svaret på alle spørgsmål!");
+        }
+    }
+    
 }

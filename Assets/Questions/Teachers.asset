@@ -22,19 +22,3 @@ MonoBehaviour:
     - Signe
     correctAnswer: 2
     questionImage: {fileID: 0}
-  - questionFormulation: 
-    answers: []
-    correctAnswer: 0
-    questionImage: {fileID: 0}
-  - questionFormulation: 
-    answers: []
-    correctAnswer: 0
-    questionImage: {fileID: 0}
-  - questionFormulation: 
-    answers: []
-    correctAnswer: 0
-    questionImage: {fileID: 0}
-  - questionFormulation: 
-    answers: []
-    correctAnswer: 0
-    questionImage: {fileID: 0}
