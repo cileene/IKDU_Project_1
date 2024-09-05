@@ -8,7 +8,7 @@ public class QuizManager : MonoBehaviour
 {
 
     public Questions[] categories;
-    private Question selectedCategory;
+    private Questions selectedCategory;
 
     private int currentQuestionIndex = 0;
 
@@ -20,12 +20,35 @@ public class QuizManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        categorySelect(0);
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void categorySelect(int categoryIndex)
+    {
+        selectedCategory = categories[categoryIndex];
+        currentQuestionIndex = 0;
+        DisplayQuestion();
+    }
+
+    public void DisplayQuestion()
+    {
+        if (selectedCategory == null) return;
+        var question = selectedCategory.questionsList[currentQuestionIndex];
+
+        questionText.text = question.questionFormulation;
+
+        questionImage.sprite = question.questionImage;
+
+        for (int i = 0; i < replyButton.Length; i++)
+        {
+            TMP_Text buttonTexten = replyButton[i].GetComponentInChildren<TMP_Text>();
+            buttonTexten.text = question.answers[i];
+        }
     }
 }
