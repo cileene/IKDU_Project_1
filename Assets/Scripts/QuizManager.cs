@@ -16,6 +16,11 @@ public class QuizManager : MonoBehaviour
     public Image questionImage;
     public Button[] replyButton;
 
+    [Header("Score")]
+    public ScoreManager scoreController;
+    public int correctScore = 2;
+    public int wrongScore = 1;
+
     public 
     // Start is called before the first frame update
     void Start()
@@ -57,13 +62,15 @@ public class QuizManager : MonoBehaviour
        if (replyIndex == selectedCategory.questionsList[currentQuestionIndex].correctAnswer)
        {
             Debug.Log("Du har svaret rigtigt!");
+            scoreController.AddScore(correctScore);
        }
        else
        {
             Debug.Log("Du har svaret forkert!");
+            scoreController.RemoveScore(wrongScore);
        }
         currentQuestionIndex++;
-        
+
         if (currentQuestionIndex < selectedCategory.questionsList.Length)
         {
             DisplayQuestion();

@@ -21,4 +21,20 @@ MonoBehaviour:
     - Ali
     - Signe
     correctAnswer: 2
-    questionImage: {fileID: 0}
+    questionImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  - questionFormulation: "Hvem er denne l\xE6rer/vejleder?"
+    answers:
+    - Olga
+    - Scott
+    - Ali
+    - Signe
+    correctAnswer: 1
+    questionImage: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  - questionFormulation: "Hvem er denne l\xE6rer/vejleder?"
+    answers:
+    - Olga
+    - Scott
+    - Ali
+    - Signe
+    correctAnswer: 3
+    questionImage: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
