@@ -3,14 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+// a script that handles the webcam feed in a Unity project.
 public class WebCamFeed : MonoBehaviour
 {
     public RawImage rawImage;
+
+    // WebCam Textures are textures onto which the live video input is rendered.
     private WebCamTexture webCamTexture;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Return a list of available devices.
         WebCamDevice[] devices = WebCamTexture.devices;
 
         if (devices.Length > 0)
