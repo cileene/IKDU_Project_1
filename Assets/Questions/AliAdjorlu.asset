@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c91e5400a0a7c4563815e26b0c35cfed, type: 3}
+  m_Name: AliAdjorlu
+  m_EditorClassIdentifier: 
+  category: HarNickFixetKameraet
+  questionsList:
+  - questionFormulation: Who is this?
+    answers:
+    - ...
+    - ...
+    - ...
+    - Ali Adjorlu
+    correctAnswer: 3
+    questionImage: {fileID: 21300000, guid: f9d1fa72bbfba401c8d66c073697824f, type: 3}
+  - questionFormulation: Wher's Ali from?
+    answers:
+    - Turin, Italy
+    - Tehran, Iran
+    - Odense, Denmark
+    - Kyoto, Japan
+    correctAnswer: 1
+    questionImage: {fileID: 21300000, guid: 1f32fbd80e889442e8b306387228a8e3, type: 3}
+  - questionFormulation: Ali speaks multiple languages, but which of these is not
+      one of them?
+    answers:
+    - French
+    - Persian
+    - Danish
+    - German
+    correctAnswer: 0
+    questionImage: {fileID: 21300000, guid: 993aee079950c46608b32b4cc0b1a9cc, type: 3}
+  - questionFormulation: When did Ali enroll as a student at Aalborg University?
+    answers:
+    - 2006
+    - 2007
+    - 2008
+    - 2009
+    correctAnswer: 2
+    questionImage: {fileID: 21300000, guid: 988e7407eb7234487a6a2731aa2fff2c, type: 3}
+  - questionFormulation: In which year did Ali receive his Danish citizenship?
+    answers:
+    - 2017
+    - 2018
+    - 2019
+    - 2020
+    correctAnswer: 3
+    questionImage: {fileID: 21300000, guid: 4c9928a74ce02469fa5ce4d3f40453f0, type: 3}
+  - questionFormulation: "And finally, at Ali's PhD defense, how many people were
+      on the Zoom call during the final \u201Csk\xE5l!\u201D?"
+    answers:
+    - 19
+    - 26
+    - 33
+    - 39
+    correctAnswer: 3
+    questionImage: {fileID: 21300000, guid: 3fdafe6ad8aa44015a43668e826967de, type: 3}
