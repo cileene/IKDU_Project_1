@@ -15,13 +15,7 @@ public class FrameRateLimiter : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = targetFrameRate;
-        if (vSync)
-        {
-            QualitySettings.vSyncCount = 1;
-        }
-        else
-        {
-            QualitySettings.vSyncCount = 0;
-        }
+        // rewritten the if statement to a ternary operator
+        QualitySettings.vSyncCount = vSync ? 1 : 0;
     }
 }
