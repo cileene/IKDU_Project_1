@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class WebCamFeed : MonoBehaviour
 {
     public RawImage rawImage;
+    public Material effectMaterial;
 
     // WebCam Textures are textures onto which the live video input is rendered.
     private WebCamTexture webCamTexture;
@@ -23,6 +24,9 @@ public class WebCamFeed : MonoBehaviour
             webCamTexture = new WebCamTexture(devices[0].name);
             rawImage.texture = webCamTexture;
             webCamTexture.Play();
+
+            // Apply the WebCamEffectsMaterial to the rawImage.
+            rawImage.material = effectMaterial;
             
         }
         else

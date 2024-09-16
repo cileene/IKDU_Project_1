@@ -1759,6 +1759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rawImage: {fileID: 1552144051}
+  effectMaterial: {fileID: 2100000, guid: ffe99bebebf5b4fcc94d11f3b230740b, type: 2}
 --- !u!114 &1552144051
 MonoBehaviour:
   m_ObjectHideFlags: 0
